@@ -17,4 +17,4 @@ for j in range(10):
     with process(["python3", "./Python_sort/numpysort.py",  "./Testcase/input" + str(j + 1) + ".inp"]) as test:
         ans.write(test.recvuntil(b'|').decode()[:-1] + "ms\n")
 ans.close()
-os.system('cat ./result.out')
+#os.system('cat ./result.out')
