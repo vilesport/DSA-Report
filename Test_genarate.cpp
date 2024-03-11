@@ -18,6 +18,7 @@ int main(int argc, char* argv[])
         b = mt();
         c = mt();
         arr[i] = (a * b) / c;
+        arr[i] *= ((int(mt()) % 2 == 0) ? (double)1 : (double)-1);
     }
     if(s == "./Testcase/input1.inp")
         sort(arr + 1, arr + N + 1);
